@@ -3,11 +3,9 @@
 import { useForm } from 'react-hook-form';
 import { Button } from '@/components/ui/button';
 import InputField from '@/components/forms/InputField';
-import FooterLink from '@/components/forms/FooterLink';
-import {signInWithEmail, signUpWithEmail} from "@/lib/actions/auth.actions";
-import {toast} from "sonner";
-import {signInEmail} from "better-auth/api";
-import {useRouter} from "next/navigation";
+import { signInWithEmail } from "@/lib/actions/auth.actions";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 import OpenDevSocietyBranding from "@/components/OpenDevSocietyBranding";
 import React from "react";
 
@@ -77,7 +75,7 @@ const SignIn = () => {
                     {isSubmitting ? 'Signing In' : 'Sign In'}
                 </Button>
 
-                <FooterLink text="Don't have an account?" linkText="Create an account" href="/sign-up" />
+                {/* 注册链接已移除 */}
                 <OpenDevSocietyBranding outerClassName="mt-10 flex justify-center"/>
             </form>
         </>
